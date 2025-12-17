@@ -1,7 +1,11 @@
 export const ImageBlock = () => {
     return (
         <div>
-            ImageBlock
+            {/* <Image src={imageMain}/>
+            <div>
+                <Image/>
+                <Image/>
+            </div> */}
         </div>
     );
 };
