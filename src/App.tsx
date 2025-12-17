@@ -1,10 +1,8 @@
-import './App.css'
+import "./App.css";
+import { Card } from "./feutures/card/Card";
 
 function App() {
-  return (
-    <div>      
-    </div>
-  )
+  return <Card />;
 }
 
-export default App
+export default App;
