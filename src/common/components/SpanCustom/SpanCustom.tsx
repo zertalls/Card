@@ -2,8 +2,10 @@ import styles from './SpanCustom.module.css'
 
 type Props = {
   title: string
+  className?: string
 }
 
-export const SpanCustom = ({ title }: Props) => {
-  return <span className={styles.span}>{title}</span>
+export const SpanCustom = ({ title, className='' }: Props) => {
+  const combinedStyles = `${styles.span} ${className}`
+  return <span className={combinedStyles}>{title}</span>
 }

@@ -7,8 +7,7 @@ export const Card = () => {
     <div className="section">
       <div className="myContainer">
         <FlexWrapper>
-          <ImageBlock />
-          <hr/>
+          <ImageBlock />          
           <InfoBlock />
         </FlexWrapper>
       </div>

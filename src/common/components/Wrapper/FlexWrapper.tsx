@@ -5,11 +5,12 @@ type Props = {
     align?: 'flex-start' | 'flex-end' | 'center' | 'stretch' | 'baseline'
     wrap?: 'nowrap' | 'wrap' | 'wrap-reverse';
     gap?: number;
+    className?: string
 };
 
-export const FlexWrapper = ({children, direction='row', justify='flex-start', align, wrap='nowrap', gap=0}: Props) => {
+export const FlexWrapper = ({children, direction='row', justify='flex-start', align, wrap='nowrap', gap=0, className}: Props) => {
     return (
-        <div style={{display: 'flex', flexDirection: direction, justifyContent: justify, alignItems: align, flexWrap: wrap, gap}}>
+        <div className={className} style={{display: 'flex', flexDirection: direction, justifyContent: justify, alignItems: align, flexWrap: wrap, gap}}>
             {children}            
         </div>
     );

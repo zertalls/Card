@@ -5,18 +5,40 @@
 }
 
 .section {
-    height: 100%;
-    border: 1px solid red;
-    
+    min-height: 100vh;
+    border: 1px solid red;    
 }
 
 .myContainer {
-    max-width: 1170px;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
+    max-width: 1170px;    
+    min-height: 800px;
+    width: 100%;   
     padding: 65px 50px;
 
+    margin: 0 auto;
     border: 1px solid rgb(68, 0, 255);
 }
 
+
+li {
+    display: inline-block;
+    margin-right: 40px;
+    list-style-type: none;
+}
+
+select {
+    width: 100%;
+    border: none;
+
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: rgba(20, 20, 20, 0.8);
+
+    appearance: none;
+    background-image: url(./app/assets/infoBlock/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: right 0 top 50%;
+}
