@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    min-width: 375px;
+}
+
 .section {
     min-height: 100vh;
     border: 1px solid red;    
@@ -16,13 +20,16 @@
     padding: 65px 50px;
 
     margin: 0 auto;
-    border: 1px solid rgb(68, 0, 255);
+    outline: 1px solid rgb(68, 0, 255);
 }
 
+ul {
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+}
 
 li {
-    display: inline-block;
-    margin-right: 40px;
     list-style-type: none;
 }
 
@@ -41,4 +48,16 @@ select {
     background-image: url(./app/assets/infoBlock/arrow-down.svg);
     background-repeat: no-repeat;
     background-position: right 0 top 50%;
+}
+
+@media screen and (max-width: 1020px) {
+    .myContainer  {
+        padding: 60px 60px 60px 70px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .myContainer {
+        padding: 60px 20px 20px 60px;
+    }
 }
