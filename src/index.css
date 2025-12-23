@@ -9,8 +9,8 @@ body {
 }
 
 .section {
-    min-height: 100vh;
-    border: 1px solid red;    
+    min-height: 100vh; 
+    background-color: #eff2f9;    
 }
 
 .myContainer {
@@ -20,7 +20,7 @@ body {
     padding: 65px 50px;
 
     margin: 0 auto;
-    outline: 1px solid rgb(68, 0, 255);
+    background-color: #fff;
 }
 
 ul {
